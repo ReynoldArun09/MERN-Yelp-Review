@@ -4,7 +4,7 @@ Basic CRUD operations with MERN stack.
 
 ## Tech Stack
 
-**Client:** React, Redux, TailwindCSS, Vite
+**Client:** React, Redux, Bootstrap, Vite
 **Server:** Node, Express, Mongo
 
 ## Demo
