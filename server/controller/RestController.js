@@ -84,18 +84,24 @@ const DeleteRestaurant = async (req, res) => {
 const UpdateRestaurant = async (req, res) => {
   try {
     const { id } = req.params;
-    const data = req.body;
-    const restaurant = await Restaurant.findByIdAndUpdate(id, data, {
-      new: true,
-    });
+    const {name, location, rating} = req.body;
+    let findRestuarant = await Restaurant.findById(id)
+
+    findRestuarant.name = name || findRestuarant.name
+    findRestuarant.location = location || findRestuarant.location
+    findRestuarant.rating = rating || findRestuarant.rating
+
+    findRestuarant = await findRestuarant.save()
+
     res.status(200).json({
       Success: true,
-      data: restaurant,
+      data: findRestuarant,
     });
   } catch (error) {
     console.log("something went wrong!!");
   }
 };
+
 
 module.exports = {
   AllRestaurant,
