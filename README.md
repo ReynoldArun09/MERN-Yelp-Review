@@ -4,7 +4,7 @@ Basic CRUD operations with MERN stack and redux.
 
 ## 🔗 Links
 - Live: https://creative-chebakia-4ac9dc.netlify.app/
-- Code: https://github.com/Beast-Rey/Yelp-Review
+- Code: https://github.com/ReynoldArun09/mern-yelp-review
 
 ## Tech Stack
 
@@ -31,13 +31,13 @@ HTML, Bootstrap, Javascript
 Clone the project
 
 ```bash
-  git clone https://github.com/Beast-Rey/Yelp-Review
+  git clone https://github.com/ReynoldArun09/mern-yelp-review
 ```
 
 Go to the project directory
 
 ```bash
-  cd Yelp-Review-main
+  cd yelp-review
 ```
 To start server
 
